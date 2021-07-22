@@ -10,7 +10,7 @@ label_size = 41;
 stride = 41;
 
 dataset='291';
-dataset_path = 'C:\Shreyas\Programming\Python\Neural_Networks\Data\Dataset\';
+dataset_path = '/Dataset/';
 data_path = strcat(dataset_path, dataset);
 
 save_data = 'train_291_rgbchannels_octave.h5';
