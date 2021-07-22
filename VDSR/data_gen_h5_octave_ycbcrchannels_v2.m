@@ -13,7 +13,7 @@ dataset='291';
 dataset_path = '/Dataset/';
 data_path = strcat(dataset_path, dataset);
 
-save_data = 'train_91_ycbcrchannels_octave_v2.h5';
+save_data = 'train_91_ycbcrchannels_octave.h5';
 % save_dataset_path_1 = '/train';
 % save_dataset_path_2 = '/MATLAB/';
 % save_dataset_path = strcat(save_dataset_path_1, save_dataset_path_2);
