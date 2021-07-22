@@ -5,11 +5,11 @@ clc;
 clear all;
 close all;
 
-base_path = 'C:\Shreyas\Programming\Python\Neural_Networks\Data\Dataset\';
+base_path = '/Dataset';
 folder = '91';
 path = strcat(base_path, folder);
 
-base_path = 'C:\Shreyas\Programming\Python\Neural_Networks\VDSR\Data';
+base_path = '/test/';
 
 base_savepath_gt = '\RGB2YCBCR_OCTAVE\91_gt_oct_rgb';
 base_savepath_2x = '\RGB2YCBCR_OCTAVE\91_2x_oct_rgb';
