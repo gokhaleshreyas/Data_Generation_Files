@@ -8,15 +8,18 @@ label_size = 41;
 stride = 41;
 
 dataset='291';
-dataset_path = 'C:\Shreyas\Programming\Python\Neural_Networks\Data\Dataset\';
+dataset_path = '/Dataset/';
 data_path = strcat(dataset_path, dataset);
 
 save_data = 'train_291_ychannels_matlab.h5';
-save_dataset_path_1 = 'C:\Shreyas\Programming\Python\Neural_Networks\VDSR\Data';
-save_dataset_path_2 = '\RGB2YCBCR_MATLAB\';
-save_dataset_path = strcat(save_dataset_path_1, save_dataset_path_2);
+% save_dataset_path_1 = '/train';
+% save_dataset_path_2 = '/MATLAB/';
+% save_dataset_path = strcat(save_dataset_path_1, save_dataset_path_2);
+save_dataset_path = '../train/'
 save_path = strcat(save_dataset_path, save_data);
-
+if ~exist(save_dataset_path)
+    mkdir(save_dataset_path);
+end
 data = zeros(1, image_size, image_size, 1);
 label = zeros(1, label_size, label_size, 1);
 % padding = abs(image_size - label_size)/2;
